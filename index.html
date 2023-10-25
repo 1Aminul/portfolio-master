@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jQuery-plugin-progressbar.css">
+    <link rel="stylesheet" href="css/isotope.css">
+
+    <!-- google maps -->
+    <link rel="stylesheet" href="css/async-google-maps-all.css">
+</head>
+
+<body>
+    <!-- //background of Portfolio. -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="portfolio">
+        <nav>
+            <div class="nav-bar">
+                <div class="navbar-toggle">
+                    <svg height="40px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                        viewBox="0 0 512 512" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <g>
+                                <path
+                                    d="M343.1,315c-1.8,0.1-3.5,0.1-5.3,0.1c-29.1,0-56.5-11.3-77.1-31.9c-20.6-20.6-31.9-48-31.9-77.1    c0-16.6,3.7-32.6,10.6-47.1c3.1-6.4,6.8-12.5,11.1-18.2c-7.6,0.8-14.9,2.4-22,4.6c-46.8,14.8-80.7,58.5-80.7,110.2    c0,63.8,51.7,115.5,115.5,115.5c35.3,0,66.8-15.8,88-40.7c4.8-5.7,9.2-11.9,12.8-18.5C357.3,313.6,350.3,314.7,343.1,315z     M263.3,355.1c-54.9,0-99.5-44.6-99.5-99.5c0-39.1,22.6-72.9,55.4-89.2c-4.2,12.5-6.4,25.8-6.4,39.7c0,65.9,51,119.9,115.6,124.7    C311,346,288.2,355.1,263.3,355.1z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                    <svg enable-background="new 0 0 128 128" class="svg" height="30px" id="Layer_1" version="1.1"
+                        viewBox="0 0 128 128" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path
+                                d="M64.079,95.543c-17.39,0-31.537-14.148-31.537-31.538c0-17.389,14.147-31.535,31.537-31.535s31.537,14.146,31.537,31.535   C95.616,81.395,81.469,95.543,64.079,95.543z M64.079,36.47c-15.184,0-27.537,12.353-27.537,27.535   c0,15.184,12.354,27.538,27.537,27.538s27.537-12.354,27.537-27.538C91.616,48.823,79.263,36.47,64.079,36.47z" />
+                        </g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M64.079,114.086c-1.104,0-2-0.896-2-2V101.41c0-1.105,0.896-2,2-2s2,0.895,2,2v10.676    C66.079,113.189,65.184,114.086,64.079,114.086z" />
+                                <path
+                                    d="M64.079,28.603c-1.104,0-2-0.896-2-2V15.926c0-1.104,0.896-2,2-2s2,0.896,2,2v10.677    C66.079,27.708,65.184,28.603,64.079,28.603z" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M112.159,66.006h-10.676c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h10.676c1.104,0,2,0.896,2,2    C114.159,65.109,113.264,66.006,112.159,66.006z" />
+                                <path
+                                    d="M26.676,66.006H16c-1.104,0-2-0.896-2-2c0-1.104,0.896-2,2-2h10.676c1.104,0,2,0.896,2,2    C28.676,65.109,27.78,66.006,26.676,66.006z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M98.075,100.004c-0.512,0-1.023-0.195-1.414-0.586l-7.548-7.549c-0.781-0.781-0.781-2.047,0-2.828s2.047-0.781,2.828,0    l7.548,7.549c0.781,0.781,0.781,2.047,0,2.828C99.099,99.809,98.587,100.004,98.075,100.004z" />
+                                <path
+                                    d="M37.63,39.558c-0.512,0-1.023-0.195-1.414-0.586l-7.548-7.549c-0.781-0.781-0.781-2.048,0-2.828    c0.781-0.781,2.047-0.781,2.828,0l7.548,7.549c0.781,0.781,0.781,2.048,0,2.828C38.653,39.363,38.142,39.558,37.63,39.558z" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M90.527,39.558c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.781-0.781-2.048,0-2.828l7.55-7.549    c0.781-0.781,2.047-0.781,2.828,0s0.781,2.048,0,2.828l-7.55,7.549C91.551,39.363,91.039,39.558,90.527,39.558z" />
+                                <path
+                                    d="M30.082,100.004c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.781-0.781-2.049,0-2.828l7.549-7.549    c0.781-0.781,2.047-0.781,2.828,0s0.781,2.049,0,2.828l-7.549,7.549C31.105,99.809,30.594,100.004,30.082,100.004z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="navbar-link">
+                    <a href="#about-profile" class="about" id="about-link">
+                        <svg width="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <g id="about">
+                                <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                                <path
+                                    d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+                            </g>
+                        </svg>
+                        <p>About</p>
+                    </a>
+                    <a href="#resume-profile" class="resume" id="resume-link">
+                        <svg style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                            version="1.1" viewBox="0 0 846.66 846.66" width="24px" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Layer_x0020_1">
+                                <path class="fil0"
+                                    d="M578.34 141.01l147.54 0c11.4,0 20.65,9.25 20.65,20.65l0 653.96c0,11.4 -9.25,20.65 -20.65,20.65l-605.1 0c-11.4,0 -20.65,-9.25 -20.65,-20.65l0 -653.96c0,-11.4 9.25,-20.65 20.65,-20.65l147.54 0 0 -47c0,-11.4 9.25,-20.65 20.65,-20.65l53.33 0c9.39,-36.95 42.77,-62.95 81.03,-62.95 38.26,0 71.64,26 81.03,62.95l53.33 0c11.4,0 20.65,9.25 20.65,20.65l0 47zm-82.9 259.67c32.56,25.06 51.88,63.65 51.88,104.87l0 10.33c0,11.4 -9.24,20.65 -20.64,20.65l-223.63 0c-11.4,0 -20.64,-9.25 -20.64,-20.65l0 -10.33c0,-41.22 19.33,-79.81 51.88,-104.87 -8.07,-13.93 -12.42,-30.37 -12.42,-46.41 0,-51.36 41.64,-92.99 93,-92.99 51.35,0 92.99,41.63 92.99,92.99 0,16.01 -4.37,32.52 -12.42,46.41zm-38.36 24.05c-13.08,-5.86 -16.42,-23.23 -6.01,-33.47 10.04,-9.85 15.5,-22.93 15.5,-36.99 0,-28.55 -23.15,-51.7 -51.7,-51.7 -28.56,0 -51.71,23.15 -51.71,51.7 0,14.03 5.46,27.18 15.48,37.01 9.9,9.75 7.52,26.53 -5.06,32.97 -27.18,13.91 -45.87,40.64 -49.3,70.99l181.17 0c-3.39,-29.99 -21.68,-56.45 -48.37,-70.51zm-211.33 175.69c-27.16,0 -27.16,-41.29 0,-41.29l355.16 0c27.16,0 27.16,41.29 0,41.29l-355.16 0zm0 131.55c-27.16,0 -27.16,-41.3 0,-41.3l177.58 0c27.16,0 27.16,41.3 0,41.3l-177.58 0zm0 -65.77c-27.16,0 -27.16,-41.3 0,-41.3l355.16 0c27.16,0 27.16,41.3 0,41.3l-355.16 0zm22.57 -483.9l-126.89 0 0 612.68 563.8 0 0 -612.68 -126.89 0 0 43.25c0,11.4 -9.25,20.65 -20.65,20.65l-268.72 0c-11.4,0 -20.65,-9.25 -20.65,-20.65l0 -43.25zm92.06 -67.65l-50.77 0 0 90.26 227.44 0 0 -90.26 -50.77 0c-11.4,0 -20.64,-9.24 -20.64,-20.64 0,-23.37 -18.94,-42.31 -42.31,-42.31 -23.37,0 -42.31,18.94 -42.31,42.31 0,11.4 -9.24,20.64 -20.64,20.64z" />
+                            </g>
+                        </svg>
+                        <p>Resume</p>
+                    </a>
+                    <a href="#works-profile" class="works" id="work-link">
+                        <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+                            width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <path
+                                    d="M256,128c-81.9,0-145.7,48.8-224,128c67.4,67.7,124,128,224,128c99.9,0,173.4-76.4,224-126.6   C428.2,198.6,354.8,128,256,128z M256,347.3c-49.4,0-89.6-41-89.6-91.3c0-50.4,40.2-91.3,89.6-91.3s89.6,41,89.6,91.3   C345.6,306.4,305.4,347.3,256,347.3z" />
+                                <g>
+                                    <path
+                                        d="M256,224c0-7.9,2.9-15.1,7.6-20.7c-2.5-0.4-5-0.6-7.6-0.6c-28.8,0-52.3,23.9-52.3,53.3c0,29.4,23.5,53.3,52.3,53.3    s52.3-23.9,52.3-53.3c0-2.3-0.2-4.6-0.4-6.9c-5.5,4.3-12.3,6.9-19.8,6.9C270.3,256,256,241.7,256,224z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <p>Projects</p>
+                    </a>
+                    <a href="#blog-profile" class="blog" id="blog-link">
+                        <svg width="24px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <title />
+                            <path
+                                d="M42,57H22A15,15,0,0,1,7,42V22A15,15,0,0,1,22,7H35A15,15,0,0,1,50,22v.5A2.5,2.5,0,0,0,52.5,25,4.5,4.5,0,0,1,57,29.5V42A15,15,0,0,1,42,57ZM22,9A13,13,0,0,0,9,22V42A13,13,0,0,0,22,55H42A13,13,0,0,0,55,42V29.5A2.5,2.5,0,0,0,52.5,27,4.5,4.5,0,0,1,48,22.5V22A13,13,0,0,0,35,9Z" />
+                            <path
+                                d="M35.5,27h-11a4.5,4.5,0,0,1,0-9h11a4.5,4.5,0,0,1,0,9Zm-11-7a2.5,2.5,0,0,0,0,5h11a2.5,2.5,0,0,0,0-5Z" />
+                            <path
+                                d="M41.5,45h-17a4.5,4.5,0,0,1,0-9h17a4.5,4.5,0,0,1,0,9Zm-17-7a2.5,2.5,0,0,0,0,5h17a2.5,2.5,0,0,0,0-5Z" />
+                        </svg>
+                        <p>Blog</p>
+                    </a>
+                    <a href="#contact-profile" class="contact" id="contact-link">
+                        <svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128"
+                            width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z" />
+                            <path
+                                d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z" />
+                        </svg>
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        <main>
+            <div class="portfolio-menu">
+                <div class="portfolio-profile">
+                    <div>
+                        <img src="https://ryancv.bslthemes.com/wp-content/uploads/2021/12/man5_big.jpeg" alt="">
+
+                    </div>
+                    <div class="shape1"></div>
+                    <div class="shape2"></div>
+                    <div class="portfolio-content">
+                        <h2>MD Aminul Islam</h2>
+                        <div id="typewriter"></div>
+                        <div class="portfolio-social-icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-link">
+                        <a href="images/MD AMINUL ISLAM update12-05-23.pdf" download target="_blank">Download <i class="fa-solid fa-download"></i></a>
+                        <a href="">Contact me <i class="fa-regular fa-paper-plane"></i></a>
+                    </div>
+
+                </div>
+                <!-- portfolio side menu -->
+                <div class="portfolio-side">
+                    <section class="portfolio-about  scrollbar" id="about-profile">
+                        <div>
+                            <h2><span class="title">A</span>bout Me</h2>
+                            <div>
+                                <div class="about-content">
+                                    <div>
+                                        <h4>Hello! I am MD Aminul Islam</h4>
+                                        <p>
+                                            I am a WebDevloper. I have rich experience in website design and building,
+                                            also I am good at Frontend & Backend.I have specialy knowledge in ReactJs,
+                                            NodeJs, ExpressJs, MongoDB, Redux etc.I love to talk with you about our
+                                            unique.
+                                        </p>
+                                    </div>
+
+                                    <div class="about-personal-inform">
+                                        <div>
+                                            <p>Age</p>
+                                            <p>Residence</p>
+                                            <p>Address</p>
+                                        </div>
+                                        <div>
+                                            <p>26</p>
+                                            <p>Bangladesh</p>
+                                            <p>Chattogram, Bangladesh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br><br>
+                            <div class="about-services">
+                                <h2><span class="title">M</span>y Services</h2>
+                                <div class="service-info">
+                                    <div>
+                                        <span><i class="fa-solid fa-code fa-2x"></i></span>
+                                        <h3>Web Developement</h3>
+                                        <p>Modern and mobile-ready website that will help you reach all of your
+                                            marketing.</p>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-brands fa-react fa-2x"></i></span>
+                                        <h3>React</h3>
+                                        <p>Modern and mobile-ready website that will help you reach all of your
+                                            marketing.</p>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-solid fa-desktop fa-2x"></i></span>
+                                        <h3>Frontend</h3>
+                                        <p>Modern and mobile-ready website that will help you reach all of your
+                                            marketing.</p>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-solid fa-database fa-2x"></i></span>
+                                        <h3>Backend</h3>
+                                        <p>Modern and mobile-ready website that will help you reach all of your
+                                            marketing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-resume scrollbar" id="resume-profile">
+                        <div>
+                            <h2><span class="title">R</span>esume</h2>
+                            <div class="resume-content">
+                                <div class="resume-education">
+                                    <h3>Education</h3>
+                                    <div>
+                                        <p class="education-year">2019-<span>Present</span></p>
+                                        <h4>Chattogram Govt City College</h4>
+                                        <p>Bachelor of Science in Physics.</p>
+                                    </div>
+                                    <div>
+                                        <p class="education-year">2017-2018</p>
+                                        <h4>Kulgaon City Corporation College</h4>
+                                        <p>Higher Secondary Certificate in Science</p>
+                                    </div>
+                                    <div>
+                                        <p class="education-year">2015-2016</p>
+                                        <h4>Dr Mozharul Hoque High School</h4>
+                                        <p>Secondary School Certifcate</p>
+                                    </div>
+                                </div>
+                                <div class="resume-course">
+                                    <h3>Courses</h3>
+                                    <div>
+                                        <p class="education-year">2022-2023</p>
+                                        <h4>Programming Hero</h4>
+                                        <p>From June 2022 to July 2023</p>
+                                    </div>
+                                </div>
+                            </div><br><br>
+                            <div>
+                                <h2><span class="title">S</span>kills</h2>
+                                <div class="skills">
+                                    <div class="design">
+                                        <h2><i class="fa-solid fa-paintbrush"></i></i> Design</h3>
+                                            <div class="progress-bar-line">
+                                                <p>Web design</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="85">
+                                                    </div>
+                                                </div>
+                                                <p>Web Development</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="90">
+                                                    </div>
+                                                </div>
+                                                <p>Backend</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="78">
+                                                    </div>
+                                                </div>
+                                                <p>Tailwind CSS</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="90">
+                                                    </div>
+                                                </div>
+                                                <p>Bootstrap</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="85">
+                                                    </div>
+                                                </div>
+                                                <p>UI/UX</p>
+                                                <div class="progress">
+                                                    <div class="progress-done" data-done="70">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="coding">
+                                        <h2><i class="fa-solid fa-code"></i> Coding</h2>
+                                        <div class="circular-progress-coding">
+                                            <div>
+                                                <div class="progress-bar" data-percent="85" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>HTML</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="85" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>CSS</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="80" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>JS</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="80" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>ReactJS</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="70" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>Next Js</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="70" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>NodeJs</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="75" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>ExpressJs</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="70" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>MongoDB</h5>
+                                            </div>
+                                            <div>
+                                                <div class="progress-bar" data-percent="70" data-duration="1000" data-color="#b8b4b4, #7ECE73"></div>
+                                                <h5>Redux</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><br><br>
+                                <div>
+                                    <h2><span class="title">T</span>estimonials</h2>
+                                    <hr>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="portfolio-works scrollbar" id="works-profile">
+                        <div>
+                            <h2><span class="title">P</span>rojects</h2><hr>
+                           <div class="project-card">
+                                <div class="card">
+                                    <img src="images/shopping bag.gif" alt="">
+                                    <div class="card-inner">
+                                        <h3>Shopping Bag</h3>
+                                        <a href=""><i class="fa-solid fa-paperclip"></i> Live Link</a>
+                                        <a class="github" href=""><i class="fa-brands fa-github"></i> Github repo</a>
+                                        <div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/resale product.gif" alt="">
+                                    <div class="card-inner">
+                                        <h3>Shopping Bag</h3>
+                                        <a href="https://used-product-resale-client.netlify.app/" target="_blank">Live Link</a>
+                                        <a href="">Github repo</a>
+                                        <div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/shopping bag.gif" alt="">
+                                    <div class="card-inner">
+                                        <h3>Shopping Bag</h3>
+                                        <a href="">Live Link</a>
+                                        <a href="">Github repo</a>
+                                        <div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/shopping bag.gif" alt="">
+                                    <div class="card-inner">
+                                        <h3>Shopping Bag</h3>
+                                        <a href="">Live Link</a>
+                                        <a href="">Github repo</a>
+                                        <div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-blog scrollbar" id="blog-profile">
+                        <div>
+                            <h2><span class="title">B</span>log</h2>
+                        </div>
+                    </section>
+                    <section class="portfolio-contact scrollbar" id="contact-profile">
+                        <div>
+                            <h2><span class="title">G</span>et in touch</h2>
+                            <hr><br>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3689.2779111523446!2d91.80363133332818!3d22.380878300129726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1697014521931!5m2!1sen!2sbd" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                                <div class="address">
+                                    <div>
+                                       <div>
+                                        <p class="bg-green">Address :</p>
+                                        <p class="align-right">Chattogram, Bangladesh</p>
+                                       </div>
+                                       <div>
+                                        <p class="bg-green">Phone :</p>
+                                        <p class="align-right">+880 1813 520 311</p>
+                                       </div>
+                                       
+                                    </div>
+                                    <div>
+                                       <div>
+                                        <p class="bg-green">E-mail :</p>
+                                        <p class="align-right">aminulsc12@gmail.com</p>
+                                       </div>
+                                       <div>
+                                        <p class="bg-green">Development :</p>
+                                        <p class="align-right">Available</p>
+                                       </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                    <h2><span class="title">C</span>ontact Form</h2><hr><br>
+                                    <div class="form">
+                                           <div>
+                                            <input type="text" name="" id="name" placeholder="Your Name">
+                                            <input type="email" name="" id="email" placeholder="Your email">
+                                           </div>
+                                            <textarea name="" id="message" placeholder="Your Message"></textarea>
+                                            <input type="button" onclick="sendMail()" value="Send Message">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/jqueryPlugin/jquery.typewriter.js"></script>
+    <script src="js/jqueryPlugin/jQuery-plugin-progressbar.js"></script>
+    <script src="js/jqueryPlugin/async-google-maps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- writing javascript -->
+    <script>
+        $('#typewriter').typewriter({
+            prefix: "",
+            text: ["Web Developer", "MERN Stack Developer", "Frontend Developer", "Full Stack Developer", "React Developer"],
+            typeDelay: 50,
+            waitingTime: 1500,
+            blinkSpeed: 200
+        });
+
+        let progress = document.querySelectorAll('.progress-done');
+        for (let i = 0; i < progress.length; i++) {
+            progress[i].style.width = progress[i].getAttribute('data-done') + '%';
+            progress[i].style.opacity = 1;
+        }
+       
+        $('.g-maps').asyncGoogleMaps({
+            fixHeight: true
+        });
+    </script>
+    <script> $(".progress-bar").loading();</script>
+    <script>
+        (function() {
+            
+            emailjs.init('a-9yOchzUJcQez5kj');
+        })();
+    </script>
+    
+   
+</body>
+
+</html>

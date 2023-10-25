@@ -1,0 +1,147 @@
+:root{
+    --main-color:#7ECE73;
+    --dark-text-color: #fffeff;
+    --light-text-color: #0c0c0c;
+    --paragraph-color: #b8b6b6;
+    --border-color: #ccc9c9b3;
+}
+
+@media screen and (max-width:576px){
+    body{
+        height: 100vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+    }
+    .animateLeftFadeIn, .animateRigthFadeOut {
+        animation: none;
+    }
+    .nav-bar .navbar-toggle{
+        flex-direction: row;
+        width: 150px;
+        height: 75px;
+    }
+    .nav-bar .navbar-link{
+        width: 100%;
+        height: 75px;
+        flex-direction: row;
+    }
+    .navbar-link .about, .resume, .works, .blog, .contact{
+        display: inline-block;
+        margin-top: 0;
+        border-bottom: none;
+        width: auto;
+        padding-left: 12px;
+        padding-right:12px;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        height: auto;
+    }
+    .portfolio{
+        display: block;
+    }
+    .portfolio-profile{
+        position: none;
+        top: 20px;
+        width: 100%;
+    }
+  
+    .portfolio-side .portfolio-about,.portfolio-side .portfolio-resume,.portfolio-side .portfolio-works,.portfolio-side .portfolio-blog,.portfolio-side .portfolio-contact{
+        position: relative;
+        top: 40px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .portfolio-about .about-content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .portfolio-about .about-services .service-info{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        
+    }
+    .portfolio-about .about-services .service-info div{
+        border: 1px solid var(--border-color);
+    }
+    .portfolio-resume .skills{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .portfolio-resume .skills .design{
+        border-right: none;
+        padding:0 14%;
+    }
+    .portfolio-resume .skills .coding{
+        padding: 0 14%;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px){
+    body{
+        height: 100vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+    }
+    .animateLeftFadeIn, .animateRigthFadeOut {
+        animation: none;
+    }
+    .nav-bar .navbar-toggle{
+        flex-direction: row;
+        width: 150px;
+        height: 75px;
+    }
+    .nav-bar .navbar-link{
+        width: 100%;
+        height: 75px;
+        padding: 8px 12px;
+    }
+    .navbar-link .about, .resume, .works, .blog, .contact{
+        display: inline-block;
+        margin-top: 0;
+        border-bottom: none;
+        width: auto;
+        padding-left: 20px;
+        padding-right:20px;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        height: auto;
+    }
+    .portfolio{
+        display: block;
+    }
+    .portfolio-profile{
+        position: none;
+        top: 20px;
+        width: 100%;
+    }
+  
+    .portfolio-side .portfolio-about,.portfolio-side .portfolio-resume,.portfolio-side .portfolio-works,.portfolio-side .portfolio-blog,.portfolio-side .portfolio-contact{
+        position: relative;
+        top: 40px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .portfolio-about .about-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .portfolio-resume .skills{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+   
+
+}
+@media (min-width:768px) and (max-width:992px){
+    body{
+        background: red;
+    }
+}
