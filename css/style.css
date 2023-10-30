@@ -280,7 +280,6 @@
         
     }
 }
-
 .portfolio-side .scrollbar::-webkit-scrollbar {
     width: 6px;
   }
@@ -455,11 +454,15 @@
     row-gap: 30px;
     margin-top: 10px;
 }
-.circular-progress-coding h5{
+.circular-progress-coding .circle{
     color: var(--light-text-color);
     text-align: center;
-    margin-left: -18px;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px ;
+   
 }
 .portfolio-contact .address{
     display: grid;
@@ -566,6 +569,7 @@
 .portfolio-works .project-card .card .card-inner a{
     color: var(--dark-text-color);
     text-decoration: none;
+    transition:all 0.3s ease-in;
 }
 .portfolio-works .project-card .card .card-inner .github{
     margin-left:10px ;
@@ -573,6 +577,9 @@
 .portfolio-works .project-card .card:hover .card-inner{
     opacity: 1;
     transform: translateY(0);
+}
+.portfolio-works .project-card .card .card-inner a:hover{
+    color: var(--main-color);
 }
 
 
