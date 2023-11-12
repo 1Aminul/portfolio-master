@@ -1,6 +1,6 @@
 :root{
     --main-color:#7ECE73;
-    --dark-text-color: #fffeff;
+    --dark-text-color: #ffffff;
     --light-text-color: #0c0c0c;
     --paragraph-color: #b8b6b6;
     --border-color: #ccc9c9b3;
@@ -43,6 +43,7 @@
 .navbar-link .about, .resume, .works, .blog, .contact{
     text-transform: uppercase;
     font-size: 14px;
+    fill: var(--light-text-color);
     color: var(--light-text-color);
 }
 .navbar-link .about:hover ,
@@ -65,7 +66,7 @@
     width: 480px;
     height: 620px;
     top: -15px;
-    background: #fff;
+    background: var(--dark-text-color);
     z-index: 10000001;
     border-radius: 5px;
     overflow: hidden;
@@ -86,7 +87,7 @@
     height:400px;
     right: 0;
     top: 190px;
-    background:#fff;
+    background:var(--dark-text-color);
     transform: rotate(80deg);
     
 }
@@ -96,7 +97,7 @@
     height:400px;
     left: 0;
     top: 190px;
-    background: #fff;
+    background: var(--dark-text-color);
     transform: rotate(282deg);
   
 }
@@ -188,6 +189,7 @@
     width:47em;
     height: 560px;
     background-color: var(--dark-text-color);
+    color: var(--light-text-color);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -202,6 +204,7 @@
     width:47em;
     height: 560px;
     background-color: var(--dark-text-color);
+    color: var(--light-text-color);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -216,6 +219,7 @@
     width:47em;
     height: 560px;
     background-color: var(--dark-text-color);
+    color: var(--light-text-color);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -230,6 +234,7 @@
     width:47em;
     height: 560px;
     background-color: var(--dark-text-color);
+    color: var(--light-text-color);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -244,6 +249,7 @@
     width:47em;
     height: 560px;
     background-color: var(--dark-text-color);
+    color: var(--light-text-color);
     padding: 4%;
     border-radius: 5px;
     overflow-y: scroll;
@@ -355,6 +361,9 @@
     border-right: 1px solid var(--border-color);
 }
 .portfolio-about .about-services .service-info div:nth-child(3){
+    border-right: 1px solid var(--border-color);
+}
+.portfolio-about .about-services .service-info div:nth-child(5){
     border-right: 1px solid var(--border-color);
 }
 .portfolio-about .about-services .service-info i{
@@ -562,12 +571,12 @@
     padding: 10px;
     transform: translateY(120px);
     background-color:rgba(122, 122, 122, 0.7);
-    color: var(--dark-text-color);
+    color: #fff;
     transition:all 0.4s ease-in-out;
     opacity: 0;
 }
 .portfolio-works .project-card .card .card-inner a{
-    color: var(--dark-text-color);
+    color: #fff;
     text-decoration: none;
     transition:all 0.3s ease-in;
 }

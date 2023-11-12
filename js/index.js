@@ -2,7 +2,32 @@ let about = document.getElementById('about-link'),
  resume = document.getElementById('resume-link'),
  work = document.getElementById('work-link'),
  blog = document.getElementById('blog-link'),
- contact = document.getElementById('contact-link')
+ contact = document.getElementById('contact-link'),
+ dark = document.getElementById('dark'),
+ light = document.getElementById('light'),
+ root = document.querySelector(':root');
+
+
+ dark.addEventListener('click', ()=>{
+    dark.style.fill = "#78cc6d"
+    light.style.fill = "#000000"
+   root.style.setProperty("--bg-color1", "#0F0F0F")
+   root.style.setProperty( "--bg-color2", "#352F44")
+   root.style.setProperty( "--card-color", "#352F44")
+   root.style.setProperty( "--dark-text-color", "#383232")
+   root.style.setProperty( "--light-text-color", "#ffffff")
+   root.style.setProperty( "--border-color", "rgba(74, 74, 74, 3)")
+ })
+ light.addEventListener('click', ()=>{
+    light.style.fill = "#78cc6d"
+    dark.style.fill = "#000000"
+   root.style.setProperty("--bg-color1", "#50a3a2")
+   root.style.setProperty( "--bg-color2", "#78cc6d")
+   root.style.setProperty( "--card-color", "#7ec986")
+   root.style.setProperty( "--dark-text-color", "#ffffff")
+   root.style.setProperty( "--light-text-color", "#383232")
+   root.style.setProperty( "--border-color", "#ccc9c9b3")
+ })
 
 
     about.addEventListener('click', ()=>{

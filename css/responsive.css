@@ -89,6 +89,16 @@
     .portfolio-contact .map iframe{
         width: 100%;
     }
+    .portfolio-contact .contact-form .form div{
+        flex-direction: column;
+    }
+    .portfolio-contact .contact-form input[type=button]{
+        width: 100%;
+    }
+    .portfolio-contact .contact-form input[type=text]{
+        display: block;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:481px) and (max-width:768px){
@@ -170,11 +180,18 @@
     .portfolio-contact .map iframe{
         width: 100%;
     }
+    .portfolio-contact .contact-form .form div{
+        flex-direction: column;
+    }
+    .portfolio-contact .contact-form input[type=button]{
+        width: 100%;
+    }
+    .portfolio-contact .contact-form input[type=text]{
+        display: block;
+        width: 100%;
+    }
    
 
 }
 @media (min-width:769px) and (max-width:1024px){
-    body{
-        background: red;
-    }
 }
