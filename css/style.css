@@ -28,19 +28,22 @@
 }
 .nav-bar .navbar-link{
     width: auto;
-    height: auto;
+    height: 440px;
     background: var(--dark-text-color);
     border-radius: 5px;
     padding: 12px 8px;
     text-align: center;
 }
-.navbar-link .about, .resume, .works, .blog, .contact{
+.navbar-link .about, .resume, .works, .contact{
     text-decoration: none;
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
     border-bottom: 1px solid var(--border-color);
 }
-.navbar-link .about, .resume, .works, .blog, .contact{
+.navbar-link .contact{
+    border-bottom: none;
+}
+.navbar-link .about, .resume, .works, .contact{
     text-transform: uppercase;
     font-size: 14px;
     fill: var(--light-text-color);

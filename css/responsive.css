@@ -38,6 +38,9 @@
         text-align: center;
         height: auto;
     }
+    .navbar-link .contact{
+        border-right: none;
+    }
     .portfolio{
         display: block;
     }
@@ -133,6 +136,9 @@
         border-right: 1px solid var(--border-color);
         text-align: center;
         height: auto;
+    }
+    .navbar-link .contact{
+        border-right: none;
     }
     .portfolio{
         display: block;

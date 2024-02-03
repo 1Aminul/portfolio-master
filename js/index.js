@@ -3,6 +3,7 @@ let about = document.getElementById('about-link'),
  work = document.getElementById('work-link'),
  blog = document.getElementById('blog-link'),
  contact = document.getElementById('contact-link'),
+ contact2 = document.getElementById('contact-link2'),
  dark = document.getElementById('dark'),
  light = document.getElementById('light'),
  root = document.querySelector(':root');
@@ -35,12 +36,12 @@ let about = document.getElementById('about-link'),
 
         document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
         document.getElementById('works-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
+        // document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
         document.getElementById('contact-profile').classList.add('animateLeftFadeIn')
 
         document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
+        // document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('contact-profile').classList.remove('animateRigthFadeOut')
     })
     resume.addEventListener('click', ()=>{
@@ -48,12 +49,12 @@ let about = document.getElementById('about-link'),
         
         document.getElementById('about-profile').classList.add('animateLeftFadeIn')
         document.getElementById('works-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
+        // document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
         document.getElementById('contact-profile').classList.add('animateLeftFadeIn')
 
         document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
+        // document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('contact-profile').classList.remove('animateRigthFadeOut')
     })
     work.addEventListener('click', ()=>{
@@ -61,39 +62,52 @@ let about = document.getElementById('about-link'),
         
         document.getElementById('about-profile').classList.add('animateLeftFadeIn')
         document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
+        // document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
         document.getElementById('contact-profile').classList.add('animateLeftFadeIn')
 
         document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
+        // document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('contact-profile').classList.remove('animateRigthFadeOut')
     })
-    blog.addEventListener('click', ()=>{
-        document.getElementById('blog-profile').classList.add('animateRigthFadeOut')
+    // blog.addEventListener('click', ()=>{
+    //     document.getElementById('blog-profile').classList.add('animateRigthFadeOut')
         
-        document.getElementById('about-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('works-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('contact-profile').classList.add('animateLeftFadeIn')
+    //     document.getElementById('about-profile').classList.add('animateLeftFadeIn')
+    //     document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
+    //     document.getElementById('works-profile').classList.add('animateLeftFadeIn')
+    //     document.getElementById('contact-profile').classList.add('animateLeftFadeIn')
 
-        document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('contact-profile').classList.remove('animateRigthFadeOut')
-    })
+    //     document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
+    //     document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
+    //     document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
+    //     document.getElementById('contact-profile').classList.remove('animateRigthFadeOut')
+    // })
     contact.addEventListener('click', ()=>{
         document.getElementById('contact-profile').classList.add('animateRigthFadeOut')
         
         document.getElementById('about-profile').classList.add('animateLeftFadeIn')
         document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
         document.getElementById('works-profile').classList.add('animateLeftFadeIn')
-        document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
+        // document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
 
         document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
         document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
-        document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
+        // document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
+    })
+    contact2.addEventListener('click', ()=>{
+        document.getElementById('contact-profile').classList.add('animateRigthFadeOut')
+        
+        document.getElementById('about-profile').classList.add('animateLeftFadeIn')
+        document.getElementById('resume-profile').classList.add('animateLeftFadeIn')
+        document.getElementById('works-profile').classList.add('animateLeftFadeIn')
+        // document.getElementById('blog-profile').classList.add('animateLeftFadeIn')
+
+        document.getElementById('about-profile').classList.remove('animateRigthFadeOut')
+        document.getElementById('resume-profile').classList.remove('animateRigthFadeOut')
+        document.getElementById('works-profile').classList.remove('animateRigthFadeOut')
+        // document.getElementById('blog-profile').classList.remove('animateRigthFadeOut')
     })
     
 
